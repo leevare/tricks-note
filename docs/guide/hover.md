@@ -5,7 +5,8 @@ description: 页面的描述
 ---
 
 ## 背景变色
-<loading />
+
+<hover-bg />
 
 ```html
 <div class="button"><span>hover me to change</span></div>
@@ -126,3 +127,4 @@ document.querySelector('.button').addEventListener('mousemove', function (e) {
   }
 }
 ```
+
