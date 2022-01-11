@@ -17,32 +17,22 @@ const handleWheel = (e) => {
 </script>
 
 <style lang="scss" scoped>
+$colors: #00adb5, seagreen, bisque, azure, burlywood, chartreuse;
 .wrapper {
   display: flex;
   width: 600px;
   overflow-x: auto;
   background-color: #aa00ff;
+  $base-color: #036;
+
   .item {
     width: 600px;
     height: 400px;
     flex: none;
-    &:nth-child(1) {
-      background-color: #00adb5;
-    }
-    &:nth-child(2) {
-      background-color: seagreen;
-    }
-    &:nth-child(3) {
-      background-color: bisque;
-    }
-    &:nth-child(4) {
-      background-color: azure;
-    }
-    &:nth-child(5) {
-      background-color: burlywood;
-    }
-    &:nth-child(6) {
-      background-color: chartreuse;
+    @for $i from 1 through length($colors) {
+      &:nth-child(#{$i}) {
+        background-color: nth($colors, $i);
+      }
     }
   }
 }

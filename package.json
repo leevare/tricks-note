@@ -9,8 +9,12 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
+    "@types/d3": "^7.1.0",
     "@vuepress/plugin-register-components": "^2.0.0-beta.32",
     "prettier": "^2.5.1",
     "vuepress": "^2.0.0-beta.32"
+  },
+  "dependencies": {
+    "d3": "^7.3.0"
   }
 }

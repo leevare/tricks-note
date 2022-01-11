@@ -2,6 +2,8 @@ const path = require('path');
 const sidebar = require('./configs/sidebar');
 
 module.exports = {
+  base: '/tricks/',
+  dest: 'tricks',
   // 站点配置
   lang: 'zh-CN',
   title: '代码手册',
@@ -25,8 +27,12 @@ module.exports = {
     logo: 'https://vuejs.org/images/logo.png',
     navbar: [
       {
-        text: '指南',
-        link: '/guide/',
+        text: 'CSS',
+        link: '/css/',
+      },
+      {
+        text: '我的博客',
+        link: 'https://www.leevii.com',
       },
     ],
     sidebar,
